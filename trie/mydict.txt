@@ -1,0 +1,6 @@
+d:alphabetical letter d
+duong:person name
+e:alphabetical letter e
+f:alphabetical letter f
+flower:hoa
+flo:chemical
