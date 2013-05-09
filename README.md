@@ -7,7 +7,7 @@ Topics
 
 Data Structure (BST, Trie, Union-Find, etc)
 
-Algorithms (Graph algorithms, String algorithms, Number theory, etc)
+Algorithms (Graph algorithms, String algorithms, Number theory, DP, etc)
 
 Author
 ==
