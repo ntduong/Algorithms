@@ -5,13 +5,13 @@ Implementations and notes of algorithms, mainly for competitive programming cont
 Topics
 ==
 
-Data Structure (BST, Trie, Union-Find, etc)
+Data Structure (BST, Trie, Union-Find, Heap, etc)
 
-Algorithms (Graph algorithms, String algorithms, Number theory, DP, etc)
+Algorithms (Searching, Sorting, Graph algorithms, String algorithms, Number theory, DP, etc)
 
 Author
 ==
 
 Duong Nguyen @TokyoTech
 
-Email: nguyen@sg.cs.titech.ac.jp
+Email: ntduong268@gmail.com
