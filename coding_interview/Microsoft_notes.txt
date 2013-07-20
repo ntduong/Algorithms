@@ -1,0 +1,29 @@
+PROBLEMS NOTE
+(c) Duong Nguyen
+
+I. Linked-list
+1. Merge sorted two linked-list (MS Round 1 2013)
+* Recursive solution: clean & nice solution
+See also:
+http://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+http://cslibrary.stanford.edu/105/LinkedListProblems.pdf
+
+2. Two pointers with different speed
++ Find middle of a linked list
++ Convert from a1->a2->...->an->b1->b2->...->bn to a1->b1->a2->b2->....->an->bn
++ Find start point of loop in a linked-list (really nice problem)
+
+o->o->o->o->o
+		^	|
+		|	V
+		o<- o
+
+3. How to remove a node in linked-list, given only ref to that node
+4. Remove duplicate nodes in linked-list w/w.o extra memory
++ With extra memory: use, for example hastable to store element of linked-list and check if duplicates happen
++ Without extra memory: O(n^2)
+
+II. RMQ & LCA
+III. Stack & Queue & Heap (Priority queue)
+IV. Geometry problems
+Check if two rectangles overlap each other? (MS Round 1 2013) 
