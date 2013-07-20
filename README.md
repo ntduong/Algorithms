@@ -1,6 +1,7 @@
 Algorithms
 ==
 Newbie Adventures In Algorithmic Land
+
 Implementations and notes of algorithms, mainly for competitive programming contests and improving problem solving skills.
 
 Topics
