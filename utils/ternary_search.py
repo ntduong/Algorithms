@@ -16,16 +16,16 @@
 # T(n) = T(2/3*n) + C --> O(logn)
 
 def ternarySearch(f, left, right, epsilon):
-	if right-left < epsilon:
-		return (left + right) / 2
-	
-	m1 = (2*left+right)/3
-	m2 = (left+2*right)/3
-	
-	if f(m1) < f(m2):
-		return ternarySearch(f, m1, right, epsilon)
-	elif f(m1) > f(m2):
-		return ternarySearch(f, left, m2, epsilon)
-	else: return ternarySearch(f, m1, m2, epsilon)
-	
+    if right-left < epsilon:
+        return (left + right) / 2
+    
+    m1 = (2*left+right)/3
+    m2 = (left+2*right)/3
+    
+    if f(m1) < f(m2):
+        return ternarySearch(f, m1, right, epsilon)
+    elif f(m1) > f(m2):
+        return ternarySearch(f, left, m2, epsilon)
+    else: return ternarySearch(f, m1, m2, epsilon)
+    
 # See binary search, bisection algorithm, etc for similar ideas
