@@ -8,12 +8,14 @@
 
 #include<iostream>
 #include<string>
+#include<memory>
 
 using namespace std;
 
 // HEADER
 template<typename T> class SmartPointer {
 public:
+    explicit SmartPointer();
     explicit SmartPointer(T* memory);
     SmartPointer(const SmartPointer& other);
     SmartPointer& operator=(const SmartPointer& other);
@@ -39,6 +41,14 @@ private:
 };
 
 // IMPLEMENTATION
+
+template<typename T> SmartPointer<T>::SmartPointer() {
+
+    data = new Intermediary;
+    data->resource = NULL;
+    data->ref_cnt = 0;
+}
+
 template<typename T> SmartPointer<T>::SmartPointer(T* memory) {
 
     data = new Intermediary;
@@ -100,6 +110,41 @@ template<typename T> void SmartPointer<T>::reset(T* new_memory) {
     data->ref_cnt = 1;
 }
 
+struct Test {
+    SmartPointer<Test> next;
+};
+
+/*
+struct Test {
+    shared_ptr<Test> next;
+};
+*/
+
 int main(){
+
+    SmartPointer<Test> a(new Test);
+    SmartPointer<Test> b(new Test);
+
+    // Reference cycle situation!
+    a->next = b;
+    b->next = a;
+
+    {
+        SmartPointer<Test> aa(a);
+        SmartPointer<Test> bb(b);
+        cout << a.get_share_cnt() << " " << b.get_share_cnt() << endl;
+    }
+
+    // reference-counted smart pointer can not deal with the situation
+    cout << a.get_share_cnt() << " " << b.get_share_cnt() << endl;
+
+    /*
+    shared_ptr<Test> a = make_shared<Test>();
+    shared_ptr<Test> b = make_shared<Test>();
+    a->next = b;
+    b->next = a;
+    cout << a.use_count() << " " << b.use_count() << endl;
+    */
+
     return 0;
 }
