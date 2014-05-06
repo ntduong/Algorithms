@@ -4,6 +4,9 @@
     Bonus: LCP (longest common prefix) computation in O(logn) time.
     Written by Duong Nguyen.
 
+    @Update: Tested with Codeforces R244 (Div2) D: Match & Catch
+             http://codeforces.com/contest/427/problem/D
+
     @Todo: Rewrite into class SuffixArray
            Fix bugs if any
 */
