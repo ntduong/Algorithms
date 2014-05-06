@@ -92,10 +92,10 @@ int lcp(int x, int y, int step, int n){
     i1: index in suffix array
     i2: starting index in S --> S.substr(i2) to obtain the suffix
 */
-vector<ii> getSA(const string& S){
+vector<ii> getSA(const string& S, int& step){
 
     vector<ii> sa;
-    int step = buildSA(S);
+    step = buildSA(S);
     for(size_t i = 0; i < S.length(); ++i){
         sa.push_back(ii(P[step-1][i], i));
     }
@@ -112,5 +112,5 @@ int main(){
         cout << item.first << ": " << S.substr(item.second) << endl;
     }
 
-	return 0;
+    return 0;
 }
