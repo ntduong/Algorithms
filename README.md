@@ -2,20 +2,18 @@ Algorithms
 ==
 Newbie Adventures In Algorithmic Land
 
-Implementations and notes of algorithms, mainly for competitive programming contests and improving problem solving skills.
+Implementation and notes of algorithms/data structures mainly for educational purposes.
 
 Topics
 ==
 
-Data Structure (LinkedList, BST, Trie, Union-Find, Heap, BIT, etc)
+Data Structure (LinkedList, BST, Trie, Union-Find, Heap, Range queries, etc)
 
 Algorithms (Searching, Sorting, Graph algorithms, String algorithms, Number theory, DP, etc)
-
-Coding/Technical Interview Questions @Tech Companies
 
 Author
 ==
 
-Duong Nguyen @TokyoTech
+Duong Nguyen
 
 Email: ntduong268@gmail.com
